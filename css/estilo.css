@@ -107,9 +107,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-    width: 90%;
+    width: min(90%, calc(100vw - 28px));
     max-width: 480px;
-    height: 92vh;
+    height: min(86svh, 800px);
+    height: min(86dvh, 800px);
     max-height: 800px;
     background: transparent;
     padding: 12px;
@@ -139,6 +140,31 @@ body {
     z-index: -2;
     opacity: 1;
     transition: opacity 0.35s ease, filter 0.35s ease;
+}
+
+@supports (padding: max(0px)) {
+    .invitacion {
+        height: min(calc(100dvh - max(52px, env(safe-area-inset-top)) - max(52px, env(safe-area-inset-bottom))), 800px);
+    }
+}
+
+@media (max-width: 575px) {
+    .invitacion {
+        width: min(92%, calc(100vw - 24px));
+        height: min(84svh, 760px);
+        height: min(84dvh, 760px);
+        padding: 10px;
+    }
+
+    @supports (padding: max(0px)) {
+        .invitacion {
+            height: min(calc(100dvh - max(64px, env(safe-area-inset-top)) - max(64px, env(safe-area-inset-bottom))), 760px);
+        }
+    }
+
+    .contenido {
+        padding: 16px 12px;
+    }
 }
 
 .invitacion::after {
@@ -849,7 +875,7 @@ body {
 @media (min-width: 768px) {
     .invitacion {
         width: min(95%, 580px);
-        height: min(95vh, 900px);
+        height: min(92dvh, 900px);
         padding: 24px;
         border-radius: var(--radius-main);
         border-width: 2px;
