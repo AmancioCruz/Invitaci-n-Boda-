@@ -144,21 +144,21 @@ body {
 
 @supports (padding: max(0px)) {
     .invitacion {
-        height: min(calc(100dvh - max(52px, env(safe-area-inset-top)) - max(52px, env(safe-area-inset-bottom))), 800px);
+        height: min(calc(100dvh - max(16px, env(safe-area-inset-top)) - max(16px, env(safe-area-inset-bottom))), 800px);
     }
 }
 
 @media (max-width: 575px) {
     .invitacion {
         width: min(92%, calc(100vw - 24px));
-        height: min(84svh, 760px);
-        height: min(84dvh, 760px);
+        height: min(96svh, 760px);
+        height: min(96dvh, 760px);
         padding: 10px;
     }
 
     @supports (padding: max(0px)) {
         .invitacion {
-            height: min(calc(100dvh - max(64px, env(safe-area-inset-top)) - max(64px, env(safe-area-inset-bottom))), 760px);
+            height: min(calc(100dvh - max(16px, env(safe-area-inset-top)) - max(16px, env(safe-area-inset-bottom))), 760px);
         }
     }
 
