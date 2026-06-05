@@ -492,8 +492,8 @@ body {
     border-radius: var(--radius-inner);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(139, 115, 85, 0.5) transparent;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
 }
 
 .seccion-contenido .seccion-titulo {
@@ -501,11 +501,12 @@ body {
 }
 
 .seccion-contenido::-webkit-scrollbar {
-    width: 8px;
+    width: 0;
+    height: 0;
 }
 
 .seccion-contenido::-webkit-scrollbar-thumb {
-    background: rgba(139, 115, 85, 0.45);
+    background: transparent;
     border-radius: 999px;
 }
 

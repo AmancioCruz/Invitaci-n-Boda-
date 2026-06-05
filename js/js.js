@@ -312,14 +312,6 @@ function mostrarDetalles() {
             </div>
 
             <div class="bloque-seccion">
-                <h3 class="seccion-subtitulo">Hospedaje</h3>
-                <div class="detalles-lugar">
-                    <p>Tenemos tarifa especial en Hotel Brisa Clara.</p>
-                    <p>Menciona el c&oacute;digo ficticio: BODA-VM.</p>
-                </div>
-            </div>
-
-            <div class="bloque-seccion">
                 <h3 class="seccion-subtitulo">Ni&ntilde;os</h3>
                 <div class="detalles-lugar">
                     <p>Evento familiar con &aacute;rea tranquila para los m&aacute;s peque&ntilde;os.</p>
